@@ -30,3 +30,5 @@ Install [Docker](https://docs.docker.com/get-docker/) on Windows, Mac, or Linux.
 Run `docker-compose up -d` in the same directory as `docker-compose.yml`. It may take a long time to download the dependencies and build everything the first time.
 
 Once everything is running, head to [http://localhost/](http://localhost/) to access the application.
+### Stop
+Run `docker-compose down` in the same directory as `docker-compose.yml`.
