@@ -18,7 +18,7 @@ import javax.management.Notification;
 
 public class MongoDBHandler {
 
-	String local = "mongodb://localhost:27017";
+	String local = "mongodb://mongodb:27017";
 	String online = "mongodb+srv://SENG401:seng401@cluster0-hcvzz.mongodb.net/test?retryWrites=true&w=majority";
 
 	MongoClient mongoClient;

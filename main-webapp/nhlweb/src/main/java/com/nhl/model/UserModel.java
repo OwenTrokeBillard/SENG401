@@ -35,7 +35,7 @@ public class UserModel {
     private MongoCollection<Document> userAuth;
 
     public UserModel() {
-        mongo = new MongoClient("localhost", 27017);
+        mongo = new MongoClient("mongodb", 27017);
         credential = MongoCredential.createCredential("sampleUser", "core_app", "password".toCharArray());
         database = mongo.getDatabase("core_app");
         users = database.getCollection("Users");

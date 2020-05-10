@@ -15,7 +15,7 @@ public class CommentsQueryGRPCModel {
     public CommentsQueryGRPCModel() {
         // Todo: Reuse the same channel for the application lifetime
         ManagedChannel channel = ManagedChannelBuilder
-                .forAddress("localhost", 50052)
+                .forAddress("comments-microservice", 50052)
                 .usePlaintext()
                 .build();
 

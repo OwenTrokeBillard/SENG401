@@ -8,7 +8,7 @@ import { Forum } from '../models/forum.class';
 })
 export class ForumsService {
 
-  apiURL = 'http://localhost:8080';
+  apiURL = 'api';
   constructor(private httpClient: HttpClient) { }
 
   getForums() {

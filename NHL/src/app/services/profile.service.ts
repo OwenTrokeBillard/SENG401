@@ -8,15 +8,15 @@ import { Profile } from '../models/profile.class';
 })
 export class ProfileService {
 
-  apiURL = 'http://localhost:8080';
+  apiURL = 'api';
   constructor(private httpClient: HttpClient) { }
 
   getProfile(userId: string) {
     let params = new HttpParams().set("id", userId);
     console.log( "executing HTTP get" );
-    //return this.httpClient.get<any>( "http://localhost:8080/user", { params: params });
+    //return this.httpClient.get<any>( "api/user", { params: params });
 
-    return this.httpClient.get("http://localhost:8080/user", { params: params })
+    return this.httpClient.get("api/user", { params: params })
     .pipe(
       map((data: any) => {
         const profile: Profile = new Profile( data.object.id,

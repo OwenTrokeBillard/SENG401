@@ -1,0 +1,24 @@
+version: "3.7"
+
+services:
+  mongodb:
+    image: library/mongo:4.2-bionic
+    volumes:
+      - mongodb-data:/data/db
+  comments-microservice:
+    build: ./comments-microservice
+  forumpost-microservice:
+    build: ./forumpost-microservice
+  notifications-microservice:
+    build: ./notifications-microservice
+  main-webapp:
+    build: ./main-webapp/nhlweb
+  nhl:
+    build: ./nhl
+  proxy:
+    build: ./proxy
+    ports:
+      - 80:8080
+
+volumes:
+  mongodb-data:

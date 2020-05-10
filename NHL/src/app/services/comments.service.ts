@@ -9,7 +9,7 @@ import { Comment } from '../models/comment.class';
 })
 export class CommentsService {
 
-  apiURL = 'http://localhost:8080';
+  apiURL = 'api';
 
   constructor(private httpClient: HttpClient) { }
 

@@ -10,7 +10,7 @@ import { teams } from '../models/teams';
 })
 export class PostService {
 
-  apiURL = 'http://localhost:8080';
+  apiURL = 'api';
   constructor(private httpClient: HttpClient) { }
 
 

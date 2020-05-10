@@ -12,7 +12,7 @@ public class NotificationsGRPCModel {
     private final notificationServiceGrpc.notificationServiceBlockingStub notificationStub;
 
     public NotificationsGRPCModel (){
-        channel = ManagedChannelBuilder.forAddress("localhost", 50053)
+        channel = ManagedChannelBuilder.forAddress("notifications-microservice", 50053)
                 .usePlaintext()
                 .build();
         notificationStub = notificationServiceGrpc.newBlockingStub(channel);

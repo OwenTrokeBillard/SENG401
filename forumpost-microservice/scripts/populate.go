@@ -18,7 +18,7 @@ var mongoCtx context.Context
 
 func main() {
 	// CLI - INPUTS, SETUP MONGO PORT
-	mongoURIPtr := flag.String("mongo", "localhost:27017", "specify where mongodb is running")
+	mongoURIPtr := flag.String("mongo", "mongodb:27017", "specify where mongodb is running")
 	flag.Parse()
 	mongoURI := "mongodb://" + *mongoURIPtr
 	

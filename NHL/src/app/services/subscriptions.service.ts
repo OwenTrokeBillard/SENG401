@@ -8,7 +8,7 @@ import { Subscription } from '../models/subscription.class';
 })
 export class SubscriptionsService {
 
-  apiURL = 'http://localhost:8080';
+  apiURL = 'api';
 
   constructor(private httpClient: HttpClient) { }
 

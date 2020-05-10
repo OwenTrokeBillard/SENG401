@@ -151,10 +151,10 @@ impl grpc_comments::query_service_server::QueryService for GrpcQueryService {
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let addr = "[::1]:50052".parse()?;
+    let addr = "0.0.0.0:50052".parse()?;
     println!("Running on {}.", addr);
 
-    let mongodb_client = Arc::new(Client::with_uri_str("mongodb://localhost:27017/").unwrap());
+    let mongodb_client = Arc::new(Client::with_uri_str("mongodb://mongodb:27017/").unwrap());
 
     let event_store = Box::new(MongoDbEventStore::new(mongodb_client.clone()));
     let in_memory_comments = Arc::new(InMemoryComments::new());

@@ -14,7 +14,7 @@ public class ForumPostGRPCModel {
     private final ManagedChannel channel;
 
     public ForumPostGRPCModel() {
-        channel = ManagedChannelBuilder.forAddress("localhost", 50051)
+        channel = ManagedChannelBuilder.forAddress("forumpost-microservice", 50051)
                 .usePlaintext()
                 .build();
         forumStub = ForumServiceGrpc.newBlockingStub(channel);
