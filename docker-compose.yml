@@ -5,20 +5,27 @@ services:
     image: library/mongo:4.2-bionic
     volumes:
       - mongodb-data:/data/db
+    restart: always
   comments-microservice:
     build: ./comments-microservice
+    restart: always
   forumpost-microservice:
     build: ./forumpost-microservice
+    restart: always
   notifications-microservice:
     build: ./notifications-microservice
+    restart: always
   main-webapp:
     build: ./main-webapp/nhlweb
+    restart: always
   nhl:
     build: ./NHL
+    restart: always
   proxy:
     build: ./proxy
     ports:
       - 80:8080
+    restart: always
 
 volumes:
   mongodb-data:
