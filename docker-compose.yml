@@ -14,7 +14,7 @@ services:
   main-webapp:
     build: ./main-webapp/nhlweb
   nhl:
-    build: ./nhl
+    build: ./NHL
   proxy:
     build: ./proxy
     ports:
