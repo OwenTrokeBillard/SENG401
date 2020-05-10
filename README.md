@@ -23,10 +23,10 @@ Contributors: Owen Troke-Billard, Nick Brough, Jedediah Heal, Qifeng Li,  Jathni
 - Developed Using: Java, Maven, MongoDB, GRPC
 - Dev Port: 50053
 
-# Instructions
-## Prerequisites
+## Instructions
+### Prerequisites
 Install [Docker](https://docs.docker.com/get-docker/) on Windows, Mac, or Linux. Make sure Docker is using Linux containers if you are on Windows, which is the default.
-## Run
+### Run
 Run `docker-compose up -d` in the same directory as `docker-compose.yml`. It may take a long time to download the dependencies and build everything the first time.
 
 Once everything is running, head to [http://localhost/](http://localhost/) to access the application.
