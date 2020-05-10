@@ -16,4 +16,4 @@ COPY . /app
 RUN ng build
 
 # run
-CMD ["ng", "serve", "--host", "0.0.0.0"]
+CMD ["ng", "serve", "--host", "0.0.0.0", "--disableHostCheck=true"]
